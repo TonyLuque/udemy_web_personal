@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} | Mi super Blog</title>
+    {% load static %}
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>My web personal</h1>
-    <ul>
-        <li><a href="{% url 'home' %}">Portada</a></li>
-        <li><a href="{% url 'about' %}">About-me</a></li>
-        <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
-        <li><a href="{% url 'contacto' %}">Contacto</a></li>
-    </ul>
-    <header style="background-image: url('{% block background %}{% endblock %}')">
-        {% block headers %}{% endblock %}     
+    <header>
+        <span class="header__logo"></span>   
+        <ul class="header__nav">
+            <li><a href="{% url 'home' %}">Portada</a></li>
+            <li><a href="{% url 'about' %}">About-me</a></li>
+            <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        </ul>
+        <div>
+            <span></span>
+            <p>My web personal</p>
+        </div>
     </header>
     {% block content %}{% endblock %}
+
+<footer>
+    <div class="footer__icons">
+        <span class="footer__icons--all footer__icons--linkedin"></span>
+        <span class="footer__icons--all footer__icons--platzi"></span>
+        <span class="footer__icons--all footer__icons--github"></span>
+    </div>
+    <p>Hecho con <span class="footer__icons--all footer__icons--heart"></span></p>
+</footer>
 </body>
 </html>
