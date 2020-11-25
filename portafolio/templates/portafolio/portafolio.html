@@ -10,9 +10,10 @@
 {% endblock %}
 
 {% block content %}
+{% if request.project %}
     {% for project in projects %}
         <!-- Proyecto -->
-        <div >  	
+        <div >
             <div >
                 <img  src="{{project.image.url}}" alt="">
             </div>
@@ -25,4 +26,7 @@
             </div>
         </div>
     {% endfor %}
+{% else %}
+    <h1>No hay proyectos que mostrar.</h1>
+{% endif %}
 {% endblock %}
