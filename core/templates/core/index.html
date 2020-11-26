@@ -1,8 +1,23 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
 {% block title %}Portada{% endblock %}
 
-{% block headers %}
-<h1>Anthony Luque</h1>
-<span>Desarrollador de Software</span>
+{% block styles %}    
+<link href="{% static 'core/css/index.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="main__text">
+        <h1>ANTHONY <br><b>LUQUE</b></h1>
+        <p>Estudiante de <b>Platzi Master</b> enfocado en el <b>Desarrollo Full Stack</b> y la <b>Ciencia de Datos</b>. Analítico, creativo e independiente en la toma de decisiones de manera individual y en equipo. </p>
+    </section>
+    <section class="main__image">
+        <div></div>
+        <picture>
+            <img src="{% static 'core/img/photo.jpg' %}" alt="main photo">
+        </picture>
+    </section>
+</main>
 {% endblock %}
