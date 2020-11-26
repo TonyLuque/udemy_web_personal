@@ -1,3 +1,11 @@
+:root {
+    --black_violet: #14001E;
+    --violet: #6F4A8E;
+    --orange: #FFA372;
+    --purple: #2C003E;
+    --white: #F4F4F2;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,5 +15,130 @@
 
 html {
     font-size: 62.5%;
-    
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    margin: 0 auto;
+    background-color: var(--violet);
+}
+
+.header__logo {
+    background-image: url('../img/logo.svg');
+    height: 55.3px;
+    width: 64.11px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__mobile span {
+    background-image: url('../img/menu.svg');
+    width: 2.2rem;
+    height: 2.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__mobile p {
+    color: var(--orange);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-top: 1rem;
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: var(--violet);
+}
+
+.footer__icons {
+    display: inherit;
+    width: 20rem;
+    justify-content: space-around;
+}
+
+.footer__icons--all {
+    width: 3rem;
+    height: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__icons--linkedin {
+    background-image: url('../img/linkedin.svg');
+}
+
+.footer__icons--platzi {
+    background-image: url('../img/platzi.svg');
+    height: 3.3rem;
+}
+
+.footer__icons--github {
+    background-image: url('../img/github.svg');
+}
+
+.footer__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer__text p {
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--white);
+}
+
+.footer__icons--hearth {
+    background-image: url('../img/hearth.svg');
+    width: 2.5rem;
+    height: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1rem;
+}
+
+.light {
+    background-color: var(--white);
+}
+
+.light__platzi {
+    color: var(--purple);
+}
+
+.ligth__text {
+    color: var(--purple);
 }
