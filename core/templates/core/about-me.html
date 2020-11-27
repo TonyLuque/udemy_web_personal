@@ -1,13 +1,14 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
-{% block title %}Acerca de{% endblock %}
+{% block title %}About-me{% endblock %}
 
-{% block headers %}
-<h1>Acerca de</h1>
-<span>Biografía</span>
+{% block styles %}    
+<link href="{% static 'core/css/about-me.css' %}" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block content %}
+
 <div> 
     <div>
         <img src="{% static 'core/img/avatar.jpg' %}" alt="">

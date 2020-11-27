@@ -137,15 +137,3 @@ footer {
     background-size: cover;
     margin-left: 1rem;
 }
-
-.light {
-    background-color: var(--white);
-}
-
-.light__platzi {
-    color: var(--purple);
-}
-
-.ligth__text {
-    color: var(--purple);
-}
