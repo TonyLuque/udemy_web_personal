@@ -1,3 +1,5 @@
+/* Sobreescribiendo los estilos de base para el header y el footer*/
+
 header {
     background-color: var(--white);
 }
@@ -17,4 +19,63 @@ footer {
 .footer__text p {
     color: var(--purpure);
     font-weight: medium;
+}
+
+/* Aca inician los estilos del block content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 130px;
+    background-color: var(--white);
+}
+
+.main__principal, .main__about_me{           
+    width: 85vw;
+    max-width: 1295px;
+}
+
+.main__principal {
+    text-align: center;
+    border-bottom: 2px solid var(--violet);
+}
+
+.main__principal h2 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--orange);
+}
+
+.main__about_me article h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--violet);
+    margin-top: 3.8rem;
+}
+
+.main__about_me div {
+    margin-top: 4.7rem;
+}
+
+.main__about_me div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1rem solid var(--orange);
+}
+
+.main__about_me article p b {
+    font-weight: bold;
+    color: var(--orange);
+    line-height: 2.6rem;
+}
+
+main p {
+    font-size: 1.6rem;
+    color: var(--black_violet);
+    margin-top: .7rem;
+    margin-bottom: 1.4rem;
 }

@@ -82,9 +82,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 12rem;
     width: 100%;
     background-color: var(--violet);
+    position: fixed;
+    bottom: 0;
 }
 
 .footer__icons {

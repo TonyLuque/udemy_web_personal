@@ -9,14 +9,28 @@
 
 {% block content %}
 
-<div> 
-    <div>
-        <img src="{% static 'core/img/avatar.jpg' %}" alt="">
-    </div>
-    <div >
-        <h2 >Anthony Luque</h2>   
-        <p>Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
-    </div>
-</div>
+<main>
+    <section class="main__principal">
+        <h2>Hola!</h2>
+        <p>Soy desarrollador Full-Stack y Diseñador gráfico.</p>
+    </section>
+    <section class="main__about_me">
+        <article>
+            <h2>Acerca de mi.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis porta consequat aliquet suspendisse leo. Fringilla habitasse risus nisi justo. Etiam risus lorem consectetur ut aliquet. Ipsum, enim pellentesque nunc id aliquam.</p>
+        </article>
+        <div>
+            <img src="{% static 'core/img/avatar.jpg' %}" alt="">
+        </div>
+        <article>
+            <h2>Detalles</h2>
+            <p><b>Nombre:</b><br>
+                Anthony Stiven Luque Acevedo<br><br>
+                <b>Edad:</b><br>
+                28 años<br><br>
+                <b>Ubicación:</b><br>
+                Colombia, Facatativá - Cundinamarca. </p>
+        </article>
+    </section>
+</main>
 {% endblock %}
