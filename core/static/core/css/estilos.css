@@ -46,7 +46,40 @@ header {
 }
 
 .header__nav {
-    display: none;
+    position: fixed;
+    display: none;/* Cambia a flex dinamicamente con JS*/
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: var(--violet);
+    width: 100vw;
+    height: 100vh;
+    list-style: none;
+    padding-bottom: 2rem;
+    z-index: 1;
+}
+
+.header__nav span {
+    margin-left: 80%;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.header__nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid var(--white);
+    width: 60vw;
+}
+
+.header__nav a {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin: 2.5rem auto;
 }
 
 .header__mobile {
@@ -72,8 +105,6 @@ header {
     line-height: 2.7rem;
     margin-top: 1rem;
 }
-
-
 
 /* Footer */
 
