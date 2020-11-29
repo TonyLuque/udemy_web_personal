@@ -25,6 +25,16 @@ main {
     color: var(--orange);
 }
 
+.main__about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__about_me article {
+    max-width: 30rem;
+}
+
 .main__about_me article h2 {
     font-size: 2.6rem;
     font-weight: bold;
@@ -34,6 +44,7 @@ main {
 
 .main__about_me div {
     margin-top: 4.7rem;
+    max-width: 30rem;
 }
 
 .main__about_me div img {
@@ -54,4 +65,9 @@ main p {
     color: var(--black_violet);
     margin-top: .7rem;
     margin-bottom: 1.4rem;
+}
+
+/* Tablet */
+@media (min-width: 520px){
+
 }
