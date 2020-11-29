@@ -1,27 +1,3 @@
-/* Sobreescribiendo los estilos de base para el header y el footer*/
-
-header {
-    background-color: var(--white);
-}
-
-.header__logo {
-    background-image: url('../img/logo_dark.svg');
-}
-
-footer {
-    background-color: var(--white);
-}
-
-.footer__icons--platzi {
-    background-image: url('../img/platzi_dark.svg');
-}
-
-.footer__text p {
-    color: var(--purpure);
-    font-weight: medium;
-}
-
-/* Aca inician los estilos del block content */
 main {
     display: flex;
     flex-direction: column;
