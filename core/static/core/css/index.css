@@ -88,3 +88,32 @@ main {
         width: 60rem;
     }
 }
+
+@media (min-width: 1200px){
+
+    main {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    .main__text {
+        max-width: 65rem;
+    }
+
+    .main__image {
+        width: 40rem;
+        height: 45rem;
+        margin: 0;
+    }
+
+    .main__image picture {
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .main__image div {
+        width: 35rem;
+        height: 40rem;
+    }
+}
