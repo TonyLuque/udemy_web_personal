@@ -83,7 +83,7 @@ main {
 @media (min-width: 520px){
 
     .main__principal h2 {
-        font-size: 7rem;
+        font-size: 5rem;
         margin-bottom: 5rem;
     }
 
@@ -97,5 +97,25 @@ main {
 
     .contact__mail a {
         font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .contact {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact div {
+        width: 30vw;
+    }
+
+    .contact div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact__mail {
+        margin: auto 0;
     }
 }

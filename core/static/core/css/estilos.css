@@ -223,4 +223,9 @@ footer {
         justify-content: space-between;
         padding: 0 5%;
     }
+
+    .active {
+        font-weight: bold;
+        border-bottom: .2rem solid var(--orange);
+    }
 }

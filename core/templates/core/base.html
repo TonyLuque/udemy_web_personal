@@ -16,10 +16,10 @@
             <a href="{% url 'home' %}" class="header__logo"></a>
             <ul id="menu" class="header__nav">
                 <span onclick="menu()">X</span>
-                <li><a href="{% url 'home' %}">Inicio</a></li>
-                <li><a href="{% url 'about' %}">Quien soy</a></li>
-                <li><a href="{% url 'portfolio' %}">Portafolio</a></li>
-                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}" >Inicio</a></li>
+                <li><a href="{% url 'about' %}" class="{% if request.path == '/about-me/' %}active{% endif %}" >Quien soy</a></li>
+                <li><a href="{% url 'portfolio' %}" class="{% if request.path == '/portfolio/' %}active{% endif %}" >Portafolio</a></li>
+                <li><a href="{% url 'contacto' %}" class="{% if request.path == '/contact/' %}active{% endif %}" >Contacto</a></li>
             </ul>
             <div class="header__mobile">
                 <span onclick="menu()"></span>
