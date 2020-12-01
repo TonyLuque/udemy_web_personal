@@ -18,3 +18,9 @@ footer {
     color: var(--purpure);
     font-weight: medium;
 }
+
+@media (min-width: 1024px){
+    .header__nav a {
+        color: var(--purpure);
+    }
+}

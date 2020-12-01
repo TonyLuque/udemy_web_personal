@@ -80,6 +80,7 @@ header {
     font-size: 2.5rem;
     color: var(--white);
     margin: 2.5rem auto;
+    outline: none;
 }
 
 .header__mobile {
@@ -178,5 +179,48 @@ footer {
 
     .header__mobile p {
         font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .header__nav {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        padding-bottom: 0;
+        z-index: 0;
+    }
+
+    .header__nav span {
+        display: none;
+    }
+
+    .header__nav li {
+        width: auto;
+        border-bottom: none;
+        padding: 0 1rem;
+    }
+
+    .header__nav a {
+        margin: auto;
+    }
+
+    .header__mobile span {
+        display: none;
+    }
+
+    .header__mobile p {
+        font-size: 3rem;
+        margin: auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5%;
     }
 }
