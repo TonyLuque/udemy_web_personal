@@ -170,3 +170,13 @@ footer {
     background-size: cover;
     margin-left: 1rem;
 }
+
+@media (min-width: 520px){
+    header {
+        height: 15rem;
+    }
+
+    .header__mobile p {
+        font-size: 2.5rem;
+    }
+}

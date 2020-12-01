@@ -31,9 +31,6 @@ main {
     align-items: center;
 }
 
-.main__about_me article {
-    max-width: 30rem;
-}
 
 .main__about_me article h2 {
     font-size: 2.6rem;
@@ -67,7 +64,23 @@ main p {
     margin-bottom: 1.4rem;
 }
 
+article {
+    max-width: 50rem;
+}
+
 /* Tablet */
 @media (min-width: 520px){
+
+    .main__principal {
+        padding-bottom: 1.5rem;
+    }
+    
+    .main__principal h2 {
+        font-size: 7rem;
+    }
+
+    main p {
+        font-size: 2.5rem;
+    }
 
 }

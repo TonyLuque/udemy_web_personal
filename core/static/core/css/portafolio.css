@@ -56,3 +56,18 @@ main div h2 {
     color: var(--orange);
     margin-top: 3rem;
 }
+
+@media (min-width: 520px){
+    main div h2 {
+        font-size: 7rem;
+        margin-bottom: 5rem;
+    }
+
+    .card__text--container h2 {
+        font-size: 4rem;
+    }
+
+    .card__text--container p {
+        font-size: 2.5rem;
+    }
+}
