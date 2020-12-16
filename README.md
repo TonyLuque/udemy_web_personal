@@ -1,5 +1,6 @@
 # Blog Personal
 [!!!Ver el Proyecto¡¡¡](https://demo-blog-personal.herokuapp.com/)
+
 Proyecto basado en el curso "[Curso Practico de Django](https://www.udemy.com/course/curso-django-2-practico-desarrollo-web-python-3/)" de la plataforma udemy, en el cual se vieron los conceptos básicos de lo que es una app, creación de un modelo para la base de datos y la configuración general del proyecto en el Framework de Django.
 
 El proyecto es un blog personal con cuatro páginas, tres estáticas y una dinámica:
